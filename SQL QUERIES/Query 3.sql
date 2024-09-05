@@ -1,3 +1,5 @@
+# Displays the Total Revenue generated for each campaign before and after the promotions are applied.
+
 SELECT CAMPAIGN_NAME , 
 CONCAT(ROUND(SUM(base_price*`quantity_sold(before_promo)`)/1000000 , 2) , " Millions") AS 'TOTAL_REVENUE( BEFORE_PROMOTION )' ,
 CONCAT(ROUND(SUM(
