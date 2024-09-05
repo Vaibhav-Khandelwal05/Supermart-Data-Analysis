@@ -1,3 +1,6 @@
+# Overview of the number of stores in each city.
+# It will help us to identify the cities with the highest store presence.
+
 SELECT DISTINCT(CITY) , COUNT(CITY) AS TOTAL_STORES FROM dim_stores
 GROUP BY CITY
 ORDER BY TOTAL_STORES DESC
